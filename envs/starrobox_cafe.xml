@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="starrobox_cafe">
+	<compiler angle="radian" meshdir="../assets/meshes/" />
+	<visual>
+		<rgba haze="1 1 1 1" />
+	</visual>
+	<asset>
+		<texture name="cafe_skybox" type="skybox" builtin="flat" rgb1="1 1 1" rgb2="1 1 1" width="512" height="512" />
+	</asset>
+	<statistic center="0 0 2.5" extent="12" />
+	<include file="../models/fairino5_v6/integrated_arm_left.xml" />
+	<include file="../models/fairino5_v6/integrated_arm_right.xml" />
+	<include file="../models/camera/orbec_cam.xml" />
+	<include file="../models/objects/box.xml" />
+</mujoco>

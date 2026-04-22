@@ -9,16 +9,16 @@
     <texture type="skybox" builtin="flat" rgb1="1 1 1" rgb2="1 1 1" width="512" height="512" />
     <texture type="2d" colorspace="auto" name="elp_tex" builtin="flat" rgb1="0.15 0.15 0.15" width="256" height="256" />
     <material name="elp_mat" texture="elp_tex" rgba="0.2 0.2 0.2 1" />
-    <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="1 1 1" />
+    <mesh name="elp_cam_mesh" file="../../assets/meshes/camera/elp_cam.stl" scale="0.001 0.001 0.001" />
   </asset>
 
   <worldbody>
     <body name="elp/base">
       <inertial pos="0 0 0" mass="0.08" diaginertia="5e-05 5e-05 5e-05" />
       <geom name="elp/body" type="mesh" contype="0" conaffinity="0" group="2" material="elp_mat" mesh="elp_cam_mesh" />
-      <site name="elp/mount_site" pos="-56.8629 28.5337 11.5669" quat="0.707107 0 0.707107 0" size="0.002" group="5" rgba="0 1 0 1" />
-      <site name="elp/optical_site" pos="-29.1295 28.6639 41.7027" size="0.002" group="5" rgba="1 0 0 1" />
-      <camera name="elp/rgb" pos="-28.9568 28.5627 37.6585" quat="0 0.707107 -0.707107 0" fovy="70" />
+      <site name="elp/mount_site" pos="-0.0568629 0.0285337 0.0115669" quat="0.707107 0 0.707107 0" size="2e-06" group="5" rgba="0 1 0 1" />
+      <site name="elp/optical_site" pos="-0.0291295 0.0286639 0.0417027" size="2e-06" group="5" rgba="1 0 0 1" />
+      <camera name="elp/rgb" pos="-0.0289568 0.0285627 0.0376585" quat="0 0.707107 -0.707107 0" fovy="70" />
     </body>
   </worldbody>
 </mujoco>
