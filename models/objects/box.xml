@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="box">
+  <!--robola compile-->
+  <compiler angle="radian" meshdir="../../assets/meshes/" />
+
+  <visual>
+    <global azimuth="135" elevation="-25" />
+  </visual>
+
+  <asset>
+    <texture type="2d" colorspace="auto" name="box_tex" builtin="flat" rgb1="0.839216 0.819608 0.556863" width="256" height="256" />
+    <material name="box_mat" texture="box_tex" rgba="0.7 0.7 0.7 1" />
+    <mesh name="box_mesh" file="box/starrobot_box.stl" />
+  </asset>
+
+  <worldbody>
+    <camera name="topdown" pos="0 12.091 106.367" fovy="55" />
+    <body name="box/container">
+      <geom name="box/container_collision" pos="-1.13687e-12 -1.93268e-12 4.54685" quat="1 0 0 0" type="mesh" group="2" material="box_mat" mesh="box_mesh" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="elp_camera">
+  <!--robola compile-->
+  <compiler angle="radian" meshdir="../../../assets/meshes/" />
+
+  <asset>
+    <texture type="2d" colorspace="auto" name="elp_tex" builtin="flat" rgb1="0.15 0.15 0.15" width="256" height="256" />
+    <material name="elp_mat" texture="elp_tex" rgba="0.2 0.2 0.2 1" />
+    <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.1 0.1 0.1" />
+  </asset>
+
+  <worldbody>
+    <body name="elp/base">
+      <inertial pos="0 0 0" mass="0.08" diaginertia="5e-05 5e-05 5e-05" />
+      <geom name="elp/body" type="mesh" contype="0" conaffinity="0" group="2" material="elp_mat" mesh="elp_cam_mesh" />
+      <site name="elp/mount_site" pos="-5.68629 2.85337 1.15669" quat="0.707107 0 0.707107 0" size="0.002" group="5" rgba="0 1 0 1" />
+      <site name="elp/optical_site" pos="-2.91295 2.86639 4.17027" size="0.002" group="5" rgba="1 0 0 1" />
+      <camera name="elp/rgb" pos="-2.89568 2.85627 3.76585" quat="0 0.707107 -0.707107 0" fovy="70" />
+    </body>
+  </worldbody>
+</mujoco>
