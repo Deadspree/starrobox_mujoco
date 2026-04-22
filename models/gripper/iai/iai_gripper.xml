@@ -52,6 +52,6 @@
   </equality>
 
   <actuator>
-    <general name="right" joint="right_pinch" ctrllimited="true" ctrlrange="-10 10" actlimited="false" biastype="affine" gainprm="20000" biasprm="0 0 -10000" />
+    <general name="gripper_actuator" joint="right_pinch" ctrllimited="true" ctrlrange="-10 10" actlimited="false" biastype="affine" gainprm="20000" biasprm="0 0 -10000" />
   </actuator>
 </mujoco>
