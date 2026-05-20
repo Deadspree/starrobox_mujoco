@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mujoco model="starrobox_cafe">
   <!--robola compile-->
-  <compiler angle="radian" meshdir="../../assets/meshes/" />
+  <compiler angle="radian" meshdir="../assets/meshes/" />
 
   <visual>
     <global azimuth="135" elevation="-25" />
@@ -32,54 +32,71 @@
     <material name="box_surface_mat" texuniform="true" metallic="0" roughness="1" rgba="0.831373 0.862745 0.603922 1" />
     <material name="wood_mat" texture="wood_text" texuniform="true" metallic="0" roughness="1" rgba="0.5 0.5 0.5 1" />
     <material name="Black" texuniform="true" metallic="0" roughness="1" rgba="0.0862745 0.0823529 0.0823529 1" />
-    <mesh name="left_base_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/base_link.STL" />
-    <mesh name="left_shoulder_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/shoulder_link.STL" />
-    <mesh name="left_upperarm_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/upperarm_link.STL" />
-    <mesh name="left_forearm_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/forearm_link.STL" />
-    <mesh name="left_wrist1_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist1_link.STL" />
-    <mesh name="left_wrist2_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist2_link.STL" />
-    <mesh name="left_wrist3_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist3_link.STL" />
-    <mesh name="iai_upper_body" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/upper_body.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_lower_body" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/lower_body.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_left_pinch" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/left_pinch.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_right_pinch" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_cable" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_side" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_claw" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_gripper_cover" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_connect_part" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
-    <mesh name="elp_cam_mesh" file="/home/user/Works/starrobox_mujoco/assets/meshes/camera/elp_cam.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_base_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/base_link.STL" />
-    <mesh name="right_shoulder_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/shoulder_link.STL" />
-    <mesh name="right_upperarm_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/upperarm_link.STL" />
-    <mesh name="right_forearm_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/forearm_link.STL" />
-    <mesh name="right_wrist1_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist1_link.STL" />
-    <mesh name="right_wrist2_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist2_link.STL" />
-    <mesh name="right_wrist3_link" file="/home/user/Works/starrobox_mujoco/assets/meshes/robots/fairino5_v6/wrist3_link.STL" />
-    <mesh name="right_iai_upper_body" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/upper_body.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_lower_body" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/lower_body.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_left_pinch" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/left_pinch.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_right_pinch" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_cable" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_side" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_claw" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_gripper_cover" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_connect_part" file="/home/user/Works/starrobox_mujoco/assets/meshes/gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_elp_cam_mesh" file="/home/user/Works/starrobox_mujoco/assets/meshes/camera/elp_cam.stl" scale="0.001 0.001 0.001" />
-    <mesh name="orbec_cam_mesh" file="/home/user/Works/starrobox_mujoco/assets/meshes/camera/gemini335L.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_mesh" file="/home/user/Works/starrobox_mujoco/assets/meshes/box/starrobot_box.stl" scale="0.001 0.001 0.001" />
-    <mesh name="table_surface" content_type="model/stl" file="table_surface.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_back" content_type="model/stl" file="box_back.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_foundation" content_type="model/stl" file="box_foundation.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_left" content_type="model/stl" file="box_left.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_right" content_type="model/stl" file="box_right.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_top" content_type="model/stl" file="box_top.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_base_link" file="robots/fairino5_v6/base_link.STL" />
+    <mesh name="left_shoulder_link" file="robots/fairino5_v6/shoulder_link.STL" />
+    <mesh name="left_upperarm_link" file="robots/fairino5_v6/upperarm_link.STL" />
+    <mesh name="left_forearm_link" file="robots/fairino5_v6/forearm_link.STL" />
+    <mesh name="left_wrist1_link" file="robots/fairino5_v6/wrist1_link.STL" />
+    <mesh name="left_wrist2_link" file="robots/fairino5_v6/wrist2_link.STL" />
+    <mesh name="left_wrist3_link" file="robots/fairino5_v6/wrist3_link.STL" />
+    <mesh name="iai_upper_body" file="gripper/iai/upper_body.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_lower_body" file="gripper/iai/lower_body.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_left_pinch" file="gripper/iai/left_pinch.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_right_pinch" file="gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_cable" file="gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_side" file="gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_claw" file="gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_gripper_cover" file="gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_connect_part" file="gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
+    <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_base_link" file="robots/fairino5_v6/base_link.STL" />
+    <mesh name="right_shoulder_link" file="robots/fairino5_v6/shoulder_link.STL" />
+    <mesh name="right_upperarm_link" file="robots/fairino5_v6/upperarm_link.STL" />
+    <mesh name="right_forearm_link" file="robots/fairino5_v6/forearm_link.STL" />
+    <mesh name="right_wrist1_link" file="robots/fairino5_v6/wrist1_link.STL" />
+    <mesh name="right_wrist2_link" file="robots/fairino5_v6/wrist2_link.STL" />
+    <mesh name="right_wrist3_link" file="robots/fairino5_v6/wrist3_link.STL" />
+    <mesh name="right_iai_upper_body" file="gripper/iai/upper_body.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_lower_body" file="gripper/iai/lower_body.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_left_pinch" file="gripper/iai/left_pinch.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_right_pinch" file="gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_cable" file="gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_side" file="gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_claw" file="gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_gripper_cover" file="gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_connect_part" file="gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
+    <mesh name="orbec_cam_mesh" file="camera/gemini335L.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_mesh" file="box/starrobot_box.stl" scale="0.001 0.001 0.001" />
+    <mesh name="table_surface" file="box/table_surface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back" file="box/box_back.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_foundation" file="box/box_foundation.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left" file="box/box_left.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right" file="box/box_right.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_top" file="box/box_top.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back_low_plane" file="box/back_low_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back_top_plane" content_type="model/stl" file="box/back_top_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_ft_pole" file="box/ft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lbt_pole" content_type="model/stl" file="box/lbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left_plane" file="box/left_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left_table_pad" file="box/left_table_pad.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lft_pole" content_type="model/stl" file="box/lft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lowback_pole" content_type="model/stl" file="box/lowback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_ls_pole" content_type="model/stl" file="box/ls_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_midback_pole" content_type="model/stl" file="box/midback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rbt_pole" content_type="model/stl" file="box/rbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rft_pole" content_type="model/stl" file="box/rft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right_plane" file="box/right_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right_table_pad" file="box/right_table_pad.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_roof" content_type="model/stl" file="box/roof.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rs_pole" content_type="model/stl" file="box/rs_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_top_mid_pole" content_type="model/stl" file="box/top_mid_pole.stl" scale="0.001 0.001 0.001" />
   </asset>
 
   <worldbody>
     <camera name="topdown" pos="0 0.012091 0.106367" fovy="55" />
     <light name="key_light" pos="0 -0.2 0.25" dir="0 0 -1" type="directional" diffuse="1 1 1" specular="0.2 0.2 0.2" />
-    <body name="left/fairino5_v6_root_frame" pos="-0.0360868 0.910242 0.8" quat="0.707107 0 0 -0.707107">
+    <body name="left/fairino5_v6_root_frame" pos="-0.0260382 0.878292 0.915051" quat="0.707107 0 0 -0.707107">
       <body name="left/fairino5_v6_body">
         <body name="left/base_link">
           <inertial pos="-0.00031896 -0.00029673 0.042463" quat="-0.270348 -0.648174 0.282295 -0.653523" mass="1.6185" diaginertia="0.00452139 0.00309793 0.00306769" />
@@ -133,8 +150,8 @@
                         <inertial pos="0 0 0" mass="0.08" diaginertia="5e-05 5e-05 5e-05" />
                         <geom name="elp/body" pos="0.0288847 0.104262 -0.0295712" quat="0.707107 0 0 0.707107" type="mesh" contype="0" conaffinity="0" group="2" material="elp_mat" mesh="elp_cam_mesh" />
                         <site name="elp/mount_site" pos="-0.0568629 0.0413539 0.0115667" quat="0.707107 0 0.707107 0" size="2e-06" group="5" rgba="0 1 0 1" />
-                        <site name="elp/optical_site" pos="-0.0291295 0.0286639 0.0417027" size="2e-06" group="5" rgba="1 0 0 1" />
-                        <camera name="elp/rgb" pos="-0.0289568 0.0285627 0.0376585" quat="0 0.707107 -0.707107 0" fovy="70" />
+                        <site name="elp/optical_site" pos="0.00037384 0.0759343 0.00441231" size="2e-06" group="5" rgba="1 0 0 1" />
+                        <camera name="elp/rgb" pos="-9.76324e-05 0.0750667 0.0102622" quat="0 0.707107 -0.707107 0" fovy="70" />
                       </body>
                     </body>
                   </body>
@@ -145,7 +162,7 @@
         </body>
       </body>
     </body>
-    <body name="right/fairino5_v6_root_frame" pos="1.0348 0.898533 0.8" quat="0.707107 0 0 -0.707107">
+    <body name="right/fairino5_v6_root_frame" pos="1.00265 0.871154 0.911099" quat="0.707107 0 0 -0.707107">
       <body name="right/fairino5_v6_body">
         <body name="right/base_link">
           <inertial pos="-0.00031896 -0.00029673 0.042463" quat="-0.270348 -0.648174 0.282295 -0.653523" mass="1.6185" diaginertia="0.00452139 0.00309793 0.00306769" />
@@ -213,18 +230,28 @@
     </body>
     <body name="orbec/base" pos="0.502972 0.754868 1.90885" quat="0.382683 -0.92388 0 0">
       <inertial pos="0 0 0" mass="0.08" diaginertia="5e-05 5e-05 5e-05" />
-      <geom name="orbec/body" type="mesh" contype="0" conaffinity="0" group="2" material="orbec_mat" mesh="orbec_cam_mesh" />
+      <geom name="orbec/body" pos="0 -0.23663 0.0622685" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="2" material="orbec_mat" mesh="orbec_cam_mesh" />
       <site name="orbec/mount_site" pos="-0.000694608 -0.0138988 -0.0165486" quat="0.707107 -0.707107 0 0" size="0.003" group="5" rgba="0 1 0 1" />
       <site name="orbec/optical_site" pos="0 0 -0.00146158" size="0.003" group="5" rgba="1 0 0 1" />
       <camera name="orbec/rgb" pos="0 0 -0.00477038" quat="0 1 0 0" fovy="70" />
     </body>
     <body name="box/container">
-      <geom name="box_table_surface" pos="0 -0.00363578 0.00475689" quat="1 0 0 0" type="mesh" material="box_surface_mat" mesh="table_surface" />
-      <geom name="foundation" type="mesh" material="box_mat" mesh="box_foundation" />
-      <geom name="left" type="mesh" material="wood_mat" mesh="box_left" />
-      <geom name="right" type="mesh" material="wood_mat" mesh="box_right" />
-      <geom name="back" type="mesh" material="wood_mat" mesh="box_back" />
-      <geom name="top" type="mesh" material="wood_mat" mesh="box_top" />
+      <geom name="box_table_surface" pos="0 -0.0156726 0.00475689" quat="1 0 0 0" type="mesh" material="box_surface_mat" mesh="table_surface" />
+      <geom name="foundation" pos="0 0 0.0962222" quat="1 0 0 0" type="mesh" material="box_mat" mesh="box_foundation" />
+      <geom name="left" type="mesh" material="wood_mat" mesh="box_left_plane" />
+      <geom name="right" type="mesh" material="wood_mat" mesh="box_right_plane" />
+      <geom name="back" type="mesh" material="wood_mat" mesh="box_back_low_plane" />
+      <geom name="back_high" type="mesh" material="wood_mat" mesh="box_back_top_plane" />
+      <geom name="top" pos="0.819164 0.990594 2.0702" quat="0.5 0.5 0.5 0.5" type="mesh" material="wood_mat" mesh="box_roof" />
+      <geom name="lft_pole" pos="0 0 0.892613" type="mesh" material="Material" mesh="box_lft_pole" />
+      <geom name="lbt_pole" pos="0 0 0.903254" type="mesh" material="Material" mesh="box_lbt_pole" />
+      <geom name="rft_pole" pos="0 0 0.899412" type="mesh" material="Material" mesh="box_rft_pole" />
+      <geom name="rbt_pole" pos="0 0 0.906428" quat="1 0 0 0" type="mesh" material="Material" mesh="box_rbt_pole" />
+      <geom name="rs_pole" pos="0.949916 0.864561 2.08562" quat="1 0 0 0" type="mesh" material="Material" mesh="box_rs_pole" />
+      <geom name="ls_pole" pos="-0.614273 0.8781 2.08304" quat="1 0 0 0" type="mesh" material="Material" mesh="box_ls_pole" />
+      <geom name="low_back_pole" pos="0.818915 0.524148 0.499983" quat="0.707107 0 0.707107 0" type="mesh" material="Material" mesh="box_lowback_pole" />
+      <geom name="mid_back_pole" pos="0.810552 0.531 1.2423" quat="0.707107 0 0.707107 0" type="mesh" material="Material" mesh="box_midback_pole" />
+      <geom name="top_mid_pole" pos="0.823036 0.909735 1.63277" quat="0.707107 0 0.707107 0" type="mesh" material="Material" mesh="box_top_mid_pole" />
     </body>
   </worldbody>
 
