@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="starrobox_cafe">
+  <!--robola compile-->
+  <compiler angle="radian" meshdir="../assets/meshes/" />
+
+  <visual>
+    <global azimuth="135" elevation="-25" />
+  </visual>
+
+  <asset>
+    <material name="Material" rgba="0.7 0.7 0.7 1" />
+    <material name="black" texuniform="true" metallic="0" roughness="1" rgba="0 0 0 1" />
+    <material name="white" texuniform="true" metallic="0" roughness="1" />
+    <mesh name="base_link" file="robots/fairino5_v6/base_link.STL" />
+    <mesh name="shoulder_link" file="robots/fairino5_v6/shoulder_link.STL" />
+    <mesh name="upperarm_link" file="robots/fairino5_v6/upperarm_link.STL" />
+    <mesh name="forearm_link" file="robots/fairino5_v6/forearm_link.STL" />
+    <mesh name="wrist1_link" file="robots/fairino5_v6/wrist1_link.STL" />
+    <mesh name="wrist2_link" file="robots/fairino5_v6/wrist2_link.STL" />
+    <mesh name="wrist3_link" file="robots/fairino5_v6/wrist3_link.STL" />
+    <mesh name="smc_obj_le2fb16t2ht_300ag_0_0" content_type="model/stl" file="objects/LE2FB16T2HT-300AG(0_0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_isa3_fcn_1_0" content_type="model/stl" file="objects/ISA3-FCN-1(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_ex600_axa" file="objects/EX600-AXA.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_pfm710_01_a_m_x300_0" content_type="model/stl" file="objects/PFM710-01-A-M-X300(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_pf2a710_01_27_0" content_type="model/stl" file="objects/PF2A710-01-27(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_jxc517_bc" content_type="model/stl" file="objects/JXC517-BC.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_ise35_n_25" content_type="model/stl" file="objects/ISE35-N-25.stl" scale="0.001 0.001 0.001" />
+    <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
+    <mesh name="cam_holder_smc_mesh" file="camera/cam_holder_smc.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_back_cover" content_type="model/stl" file="smc-box/back_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_front_cover" content_type="model/stl" file="smc-box/front_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_left_cover" content_type="model/stl" file="smc-box/left_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_right_cover" content_type="model/stl" file="smc-box/right_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_stand_surface" file="smc-box/stand_surface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="suck_tool_mesh" file="tools/suck_tool.stl" scale="0.001 0.001 0.001" />
+  </asset>
+
+  <worldbody>
+    <body name="fairino5_v6" pos="0.392374 0.366676 0.00740997" quat="0.707107 0 0 0.707107">
+      <body name="left/fairino5_v6_body">
+        <body name="left/base_link">
+          <inertial pos="-0.00031896 -0.00029673 0.042463" quat="-0.270348 -0.648174 0.282295 -0.653523" mass="1.6185" diaginertia="0.00452139 0.00309793 0.00306769" />
+          <geom name="left/geom_0_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="base_link" />
+          <body name="left/shoulder_link" gravcomp="1">
+            <inertial pos="5.0029e-07 -0.0040922 0.14629" quat="0.999588 0.0287044 7.54149e-06 -1.58789e-05" mass="4.3771" diaginertia="0.010731 0.0104154 0.00817191" />
+            <joint name="left/j1" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="1" damping="10" />
+            <geom name="left/geom_1_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="shoulder_link" />
+            <body name="left/upperarm_link" pos="0 0 0.152" quat="0.579227 0.579229 0.405579 -0.405581" gravcomp="1">
+              <inertial pos="-0.2125 -5.7643e-09 0.1346" quat="0.5 0.5 0.5 0.5" mass="14.458" diaginertia="0.4559 0.44974 0.028392" />
+              <joint name="left/j2" pos="0 0 0" axis="0 0 1" ref="-0.072" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.5" damping="10" frictionloss="0.5" />
+              <geom name="left/geom_2_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="upperarm_link" />
+              <body name="left/forearm_link" pos="-0.425 0 0" quat="0.996195 0 0 0.0871557" gravcomp="1">
+                <inertial pos="-0.18793 -8.4503e-07 0.0066357" quat="0.510607 0.489172 0.489196 0.510568" mass="7.6737" diaginertia="0.16971 0.168834 0.00821541" />
+                <joint name="left/j3" pos="0 0 0" axis="0 0 1" range="-2.8274 2.8274" actuatorgravcomp="true" armature="0.3" damping="8" frictionloss="0.3" />
+                <geom name="left/geom_3_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="forearm_link" />
+                <body name="left/wrist1_link" pos="-0.39501 0 0" quat="0.965926 0 0 -0.258819" gravcomp="1">
+                  <inertial pos="4.98e-07 -0.003754 0.097155" quat="0.736149 0.676819 -6.33095e-05 7.15237e-05" mass="1.6266" diaginertia="0.00216 0.00199337 0.00154233" />
+                  <joint name="left/j4" pos="0 0 0" axis="0 0 1" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
+                  <geom name="left/geom_4_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="wrist1_link" />
+                  <body name="left/wrist2_link" pos="0 0 0.1021" quat="0.499999 0.500001 0.499999 -0.500001" gravcomp="1">
+                    <inertial pos="-4.5588e-07 0.0038617 0.098257" quat="0.68712 0.726544 0.000128667 -0.000114125" mass="1.5812" diaginertia="0.0020612 0.00195889 0.00144611" />
+                    <joint name="left/j5" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
+                    <geom name="left/geom_5_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="white" mesh="wrist2_link" />
+                    <body name="left/wrist3_link" pos="0 0 0.102" quat="0.707107 -0.707107 0 0" gravcomp="1">
+                      <inertial pos="7.7496e-05 1.7751e-05 0.076122" quat="7.93213e-05 0.706804 0.00108234 0.707408" mass="0.52542" diaginertia="0.00041605 0.00027839 0.00027721" />
+                      <joint name="left/j6" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="0.05" damping="2" frictionloss="0.1" />
+                      <geom name="left/geom_6_" type="mesh" contype="0" conaffinity="0" group="2" material="white" mesh="wrist3_link" />
+                      <body name="suck_tool">
+                        <geom name="suck_tool" pos="-0.00210681 -0.00162584 0.0996071" quat="0 0 -0.707107 0.707107" type="mesh" contype="0" conaffinity="0" material="Material" mesh="suck_tool_mesh" />
+                        <geom name="cam_holder" pos="-0.00138366 -0.00255454 0.10156" quat="0 0 -0.707107 0.707107" type="mesh" contype="0" conaffinity="0" material="Material" mesh="cam_holder_smc_mesh" />
+                        <body name="elp_cam">
+                          <geom name="elp_cam" pos="-0.102433 -0.0330464 0.110578" quat="0.707107 0 0 -0.707107" type="mesh" contype="0" conaffinity="0" material="black" mesh="elp_cam_mesh" />
+                          <camera name="fov" pos="-0.0730382 -0.00416818 0.150308" quat="0 0 1 0" />
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="smc_box">
+      <geom name="surface" type="mesh" material="black" mesh="smc_box_stand_surface" />
+      <geom name="left_cover" pos="0 0.596931 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_left_cover" />
+      <geom name="right_cover" pos="0.801194 0.598945 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_right_cover" />
+      <geom name="back_cover" pos="-0.000564487 0.600917 -0.376361" quat="0.707107 0 0 -0.707107" type="mesh" material="Material" mesh="smc_box_back_cover" />
+      <geom name="fron_cover" pos="0.803775 -0.00432435 -0.376949" quat="0.707107 0 0 0.707107" type="mesh" material="Material" mesh="smc_box_front_cover" />
+    </body>
+    <body name="objects">
+      <body name="isa3-fcn">
+        <geom name="isa3-fcn" pos="0.499475 0.15002 0.0328649" quat="0 0 0 1" type="mesh" material="Material" mesh="smc_obj_isa3_fcn_1_0" />
+      </body>
+      <body name="ise35-n">
+        <geom name="ise35-n" pos="0.614636 0.140264 0.0181828" quat="1 0 0 0" type="mesh" material="Material" mesh="smc_obj_ise35_n_25" />
+      </body>
+      <body name="pfm710">
+        <geom name="pfm710" pos="0.154828 0.144583 0.0257424" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_obj_pfm710_01_a_m_x300_0" />
+      </body>
+      <body name="pf2a710">
+        <geom name="pf2a710" pos="0.0804893 0.15171 0.0365382" quat="0 0 0.707107 0.707107" type="mesh" material="Material" mesh="smc_obj_pf2a710_01_27_0" />
+      </body>
+      <body name="jxc517">
+        <geom name="jxc517" pos="0.746671 0.200293 0.145956" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_obj_jxc517_bc" />
+      </body>
+      <body name="le2fb">
+        <geom name="le2fb" pos="0.684841 0.469021 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_obj_le2fb16t2ht_300ag_0_0" />
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <general name="left/act1" joint="left/j1" ctrlrange="-3.0543 3.0543" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="900" biasprm="0 -900 -180" />
+    <general name="left/act2" joint="left/j2" ctrlrange="-4.6251 1.4835" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="1300" biasprm="0 -1300 -500" />
+    <general name="left/act3" joint="left/j3" ctrlrange="-2.8274 2.8274" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="1300" biasprm="0 -1300 -500" />
+    <general name="left/act4" joint="left/j4" ctrlrange="-4.6251 1.4835" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="160" biasprm="0 -160 -35" />
+    <general name="left/act5" joint="left/j5" ctrlrange="-3.0543 3.0543" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="140" biasprm="0 -140 -30" />
+    <general name="left/act6" joint="left/j6" ctrlrange="-3.0543 3.0543" dynprm="0 0 0 0 0 0 0 0 0 0" biastype="affine" gainprm="140" biasprm="0 -140 -30" />
+  </actuator>
+</mujoco>
