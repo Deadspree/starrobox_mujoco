@@ -8,6 +8,7 @@
   </visual>
 
   <asset>
+    <texture type="skybox" name="skybox" builtin="gradient" rgb1="0.7 0.8 1" rgb2="0.95 0.95 1" width="512" height="3072" />
     <material name="Material" rgba="0.7 0.7 0.7 1" />
     <material name="black" texuniform="true" metallic="0" roughness="1" rgba="0 0 0 1" />
     <material name="white" texuniform="true" metallic="0" roughness="1" />

@@ -75,22 +75,22 @@
     <mesh name="box_right" file="box/box_right.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_top" file="box/box_top.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_back_low_plane" file="box/back_low_plane.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_back_top_plane" content_type="model/stl" file="box/back_top_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back_top_plane" file="box/back_top_plane.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_ft_pole" file="box/ft_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lbt_pole" content_type="model/stl" file="box/lbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lbt_pole" file="box/lbt_pole.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_left_plane" file="box/left_plane.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_left_table_pad" file="box/left_table_pad.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lft_pole" content_type="model/stl" file="box/lft_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lowback_pole" content_type="model/stl" file="box/lowback_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_ls_pole" content_type="model/stl" file="box/ls_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_midback_pole" content_type="model/stl" file="box/midback_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rbt_pole" content_type="model/stl" file="box/rbt_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rft_pole" content_type="model/stl" file="box/rft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lft_pole" file="box/lft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lowback_pole" file="box/lowback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_ls_pole" file="box/ls_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_midback_pole" file="box/midback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rbt_pole" file="box/rbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rft_pole" file="box/rft_pole.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_right_plane" file="box/right_plane.stl" scale="0.001 0.001 0.001" />
     <mesh name="box_right_table_pad" file="box/right_table_pad.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_roof" content_type="model/stl" file="box/roof.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rs_pole" content_type="model/stl" file="box/rs_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_top_mid_pole" content_type="model/stl" file="box/top_mid_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_roof" file="box/roof.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rs_pole" file="box/rs_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_top_mid_pole" file="box/top_mid_pole.stl" scale="0.001 0.001 0.001" />
   </asset>
 
   <worldbody>
@@ -101,23 +101,23 @@
         <body name="left/base_link">
           <inertial pos="-0.00031896 -0.00029673 0.042463" quat="-0.270348 -0.648174 0.282295 -0.653523" mass="1.6185" diaginertia="0.00452139 0.00309793 0.00306769" />
           <geom name="left/geom_0_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="gripper_mat" mesh="left_base_link" />
-          <body name="left/shoulder_link" gravcomp="1">
+          <body name="left/shoulder_link" quat="0 0 0 1" gravcomp="1">
             <inertial pos="5.0029e-07 -0.0040922 0.14629" quat="0.999588 0.0287044 7.54149e-06 -1.58789e-05" mass="4.3771" diaginertia="0.010731 0.0104154 0.00817191" />
             <joint name="left/j1" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="1" damping="10" />
             <geom name="left/geom_1_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="gripper_mat" mesh="left_shoulder_link" />
-            <body name="left/upperarm_link" pos="0 0 0.152" quat="0.707105 0.707108 0 0" gravcomp="1">
+            <body name="left/upperarm_link" pos="0 0 0.152" quat="0.353553 0.353554 0.612371 -0.612374" gravcomp="1">
               <inertial pos="-0.2125 -5.7643e-09 0.1346" quat="0.5 0.5 0.5 0.5" mass="14.458" diaginertia="0.4559 0.44974 0.028392" />
               <joint name="left/j2" pos="0 0 0" axis="0 0 1" ref="-0.072" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.5" damping="10" frictionloss="0.5" />
               <geom name="left/geom_2_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="gripper_mat" mesh="left_upperarm_link" />
-              <body name="left/forearm_link" pos="-0.425 0 0" gravcomp="1">
+              <body name="left/forearm_link" pos="-0.425 0 0" quat="0.965926 0 0 -0.258819" gravcomp="1">
                 <inertial pos="-0.18793 -8.4503e-07 0.0066357" quat="0.510607 0.489172 0.489196 0.510568" mass="7.6737" diaginertia="0.16971 0.168834 0.00821541" />
                 <joint name="left/j3" pos="0 0 0" axis="0 0 1" range="-2.8274 2.8274" actuatorgravcomp="true" armature="0.3" damping="8" frictionloss="0.3" />
                 <geom name="left/geom_3_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="gripper_mat" mesh="left_forearm_link" />
-                <body name="left/wrist1_link" pos="-0.39501 0 0" gravcomp="1">
+                <body name="left/wrist1_link" pos="-0.39501 0 0" quat="0.939693 0 0 -0.34202" gravcomp="1">
                   <inertial pos="4.98e-07 -0.003754 0.097155" quat="0.736149 0.676819 -6.33095e-05 7.15237e-05" mass="1.6266" diaginertia="0.00216 0.00199337 0.00154233" />
                   <joint name="left/j4" pos="0 0 0" axis="0 0 1" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
                   <geom name="left/geom_4_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="gripper_mat" mesh="left_wrist1_link" />
-                  <body name="left/wrist2_link" pos="0 0 0.1021" quat="0.707105 0.707108 0 0" gravcomp="1">
+                  <body name="left/wrist2_link" pos="0 0 0.1021" quat="0.499999 0.500001 -0.499999 0.500001" gravcomp="1">
                     <inertial pos="-4.5588e-07 0.0038617 0.098257" quat="0.68712 0.726544 0.000128667 -0.000114125" mass="1.5812" diaginertia="0.0020612 0.00195889 0.00144611" />
                     <joint name="left/j5" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
                     <geom name="left/geom_5_" type="mesh" group="2" density="0" material="gripper_mat" mesh="left_wrist2_link" />
@@ -171,19 +171,19 @@
             <inertial pos="5.0029e-07 -0.0040922 0.14629" quat="0.999588 0.0287044 7.54149e-06 -1.58789e-05" mass="4.3771" diaginertia="0.010731 0.0104154 0.00817191" />
             <joint name="right/j1" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="1" damping="10" />
             <geom name="right/geom_1_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="right_gripper_mat" mesh="right_shoulder_link" />
-            <body name="right/upperarm_link" pos="0 0 0.152" quat="0.707105 0.707108 0 0" gravcomp="1">
+            <body name="right/upperarm_link" pos="0 0 0.152" quat="0.612372 0.612372 0.353553 -0.353553" gravcomp="1">
               <inertial pos="-0.2125 -5.7643e-09 0.1346" quat="0.5 0.5 0.5 0.5" mass="14.458" diaginertia="0.4559 0.44974 0.028392" />
               <joint name="right/j2" pos="0 0 0" axis="0 0 1" ref="-0.072" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.5" damping="10" frictionloss="0.5" />
               <geom name="right/geom_2_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="right_gripper_mat" mesh="right_upperarm_link" />
-              <body name="right/forearm_link" pos="-0.425 0 0" gravcomp="1">
+              <body name="right/forearm_link" pos="-0.425 0 0" quat="0.965926 0 0 0.258819" gravcomp="1">
                 <inertial pos="-0.18793 -8.4503e-07 0.0066357" quat="0.510607 0.489172 0.489196 0.510568" mass="7.6737" diaginertia="0.16971 0.168834 0.00821541" />
                 <joint name="right/j3" pos="0 0 0" axis="0 0 1" range="-2.8274 2.8274" actuatorgravcomp="true" armature="0.3" damping="8" frictionloss="0.3" />
                 <geom name="right/geom_3_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="right_gripper_mat" mesh="right_forearm_link" />
-                <body name="right/wrist1_link" pos="-0.39501 0 0" gravcomp="1">
+                <body name="right/wrist1_link" pos="-0.39501 0 0" quat="0.939693 0 0 -0.34202" gravcomp="1">
                   <inertial pos="4.98e-07 -0.003754 0.097155" quat="0.736149 0.676819 -6.33095e-05 7.15237e-05" mass="1.6266" diaginertia="0.00216 0.00199337 0.00154233" />
                   <joint name="right/j4" pos="0 0 0" axis="0 0 1" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
                   <geom name="right/geom_4_" type="mesh" contype="0" conaffinity="0" group="2" density="0" material="right_gripper_mat" mesh="right_wrist1_link" />
-                  <body name="right/wrist2_link" pos="0 0 0.1021" quat="0.707105 0.707108 0 0" gravcomp="1">
+                  <body name="right/wrist2_link" pos="0 0 0.1021" quat="0.499999 0.500001 0.499999 -0.500001" gravcomp="1">
                     <inertial pos="-4.5588e-07 0.0038617 0.098257" quat="0.68712 0.726544 0.000128667 -0.000114125" mass="1.5812" diaginertia="0.0020612 0.00195889 0.00144611" />
                     <joint name="right/j5" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
                     <geom name="right/geom_5_" type="mesh" group="2" density="0" material="gripper_mat" mesh="right_wrist2_link" />
