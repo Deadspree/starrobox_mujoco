@@ -8,7 +8,7 @@
   </visual>
 
   <asset>
-    <texture type="skybox" name="skybox" builtin="gradient" rgb1="0.7 0.8 1" rgb2="0.95 0.95 1" width="512" height="3072" />
+    <texture type="skybox" colorspace="auto" name="skybox" builtin="gradient" rgb1="0.7 0.8 1" rgb2="0.95 0.95 1" width="512" height="3072" />
     <material name="Material" rgba="0.7 0.7 0.7 1" />
     <material name="black" texuniform="true" metallic="0" roughness="1" rgba="0 0 0 1" />
     <material name="white" texuniform="true" metallic="0" roughness="1" />
@@ -19,25 +19,25 @@
     <mesh name="wrist1_link" file="robots/fairino5_v6/wrist1_link.STL" />
     <mesh name="wrist2_link" file="robots/fairino5_v6/wrist2_link.STL" />
     <mesh name="wrist3_link" file="robots/fairino5_v6/wrist3_link.STL" />
-    <mesh name="smc_obj_le2fb16t2ht_300ag_0_0" content_type="model/stl" file="objects/LE2FB16T2HT-300AG(0_0).stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_obj_isa3_fcn_1_0" content_type="model/stl" file="objects/ISA3-FCN-1(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_le2fb16t2ht_300ag_0_0" file="objects/LE2FB16T2HT-300AG(0_0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_isa3_fcn_1_0" file="objects/ISA3-FCN-1(0).stl" scale="0.001 0.001 0.001" />
     <mesh name="smc_obj_ex600_axa" file="objects/EX600-AXA.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_obj_pfm710_01_a_m_x300_0" content_type="model/stl" file="objects/PFM710-01-A-M-X300(0).stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_obj_pf2a710_01_27_0" content_type="model/stl" file="objects/PF2A710-01-27(0).stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_obj_jxc517_bc" content_type="model/stl" file="objects/JXC517-BC.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_obj_ise35_n_25" content_type="model/stl" file="objects/ISE35-N-25.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_pfm710_01_a_m_x300_0" file="objects/PFM710-01-A-M-X300(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_pf2a710_01_27_0" file="objects/PF2A710-01-27(0).stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_jxc517_bc" file="objects/JXC517-BC.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_obj_ise35_n_25" file="objects/ISE35-N-25.stl" scale="0.001 0.001 0.001" />
     <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
     <mesh name="cam_holder_smc_mesh" file="camera/cam_holder_smc.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_back_cover" content_type="model/stl" file="smc-box/back_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_front_cover" content_type="model/stl" file="smc-box/front_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_left_cover" content_type="model/stl" file="smc-box/left_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_right_cover" content_type="model/stl" file="smc-box/right_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_back_cover" file="smc-box/back_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_front_cover" file="smc-box/front_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_left_cover" file="smc-box/left_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_right_cover" file="smc-box/right_cover.stl" scale="0.001 0.001 0.001" />
     <mesh name="smc_box_stand_surface" file="smc-box/stand_surface.stl" scale="0.001 0.001 0.001" />
     <mesh name="suck_tool_mesh" file="tools/suck_tool.stl" scale="0.001 0.001 0.001" />
   </asset>
 
   <worldbody>
-    <body name="fairino5_v6" pos="0.392374 0.366676 0.00740997" quat="0.707107 0 0 0.707107">
+    <body name="fairino5_v6" pos="0.392374 0.366676 0.183884" quat="0.707107 0 0 0.707107">
       <body name="left/fairino5_v6_body">
         <body name="left/base_link">
           <inertial pos="-0.00031896 -0.00029673 0.042463" quat="-0.270348 -0.648174 0.282295 -0.653523" mass="1.6185" diaginertia="0.00452139 0.00309793 0.00306769" />
@@ -84,13 +84,13 @@
       </body>
     </body>
     <body name="smc_box">
-      <geom name="surface" type="mesh" material="black" mesh="smc_box_stand_surface" />
+      <geom name="surface" pos="0.00795179 0 0.170493" quat="1 0 0 0" type="mesh" material="black" mesh="smc_box_stand_surface" />
       <geom name="left_cover" pos="0 0.596931 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_left_cover" />
       <geom name="right_cover" pos="0.801194 0.598945 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_right_cover" />
       <geom name="back_cover" pos="-0.000564487 0.600917 -0.376361" quat="0.707107 0 0 -0.707107" type="mesh" material="Material" mesh="smc_box_back_cover" />
-      <geom name="fron_cover" pos="0.803775 -0.00432435 -0.376949" quat="0.707107 0 0 0.707107" type="mesh" material="Material" mesh="smc_box_front_cover" />
+      <geom name="fron_cover" pos="0.803775 -0.00432435 -0.378573" quat="0.707107 0 0 0.707107" type="mesh" material="Material" mesh="smc_box_front_cover" />
     </body>
-    <body name="objects">
+    <body name="objects" pos="0 0 0.181103">
       <body name="isa3-fcn">
         <geom name="isa3-fcn" pos="0.499475 0.15002 0.0328649" quat="0 0 0 1" type="mesh" material="Material" mesh="smc_obj_isa3_fcn_1_0" />
       </body>
