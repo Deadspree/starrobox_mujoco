@@ -30,11 +30,11 @@
   </asset>
 
   <worldbody>
-    <body name="left_fairino3_v6_root_frame" pos="-0.605 0.4 0.8" quat="0 0 0 1">
-      <body name="left_base_link">
+    <body name="left_fairino3_v6_root_frame" pos="0.07 -0.23 0.42" quat="0.5 0.5 0.5 0.5">
+      <body name="left_base_link" gravcomp="1">
         <inertial pos="-0.00049027 -0.00045095 0.032527" quat="0 0 0 1" mass="0.78393" diaginertia="0.0013854 0.0013849 0.001977" />
         <geom name="left_geom_0_" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="left_base_link" />
-        <body name="left_shoulder_link" gravcomp="1">
+        <body name="left_shoulder_link" gravcomp="1" quat="0 0 0 1">
           <inertial pos="-3.8658e-07 -0.0024176 0.13519" quat="0 0 0 1" mass="2.1225" diaginertia="0.0033227 0.0032419 0.0023129" />
           <joint name="left_j1" pos="0 0 0" axis="0 0 1" range="-3.0543 3.0543" actuatorgravcomp="true" armature="1" damping="10" />
           <geom name="left_geom_1_" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="left_shoulder_link" />
@@ -46,7 +46,7 @@
               <inertial pos="-0.18987 5.2268e-06 0.0034145" quat="0 0 0 1" mass="2.2312" diaginertia="0.0028852 0.0035145 0.0029186" />
               <joint name="left_j3" pos="0 0 0" axis="0 0 1" range="-2.8274 2.8274" actuatorgravcomp="true" armature="0.3" damping="8" frictionloss="0.3" />
               <geom name="left_geom_3_" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="left_forearm_link" />
-              <body name="left_wrist1_link" pos="-0.24001 0 0" gravcomp="1">
+              <body name="left_wrist1_link" pos="-0.24001 0 0" quat="0 0 0 1" gravcomp="1">
                 <inertial pos="4.5665e-07 -0.0034666 0.098292" quat="0 0 0 1" mass="1.5961" diaginertia="0.0020112 0.0014524 0.0019076" />
                 <joint name="left_j4" pos="0 0 0" axis="0 0 1" range="-4.6251 1.4835" actuatorgravcomp="true" armature="0.1" damping="3" frictionloss="0.1" />
                 <geom name="left_geom_4_" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="left_wrist1_link" />
