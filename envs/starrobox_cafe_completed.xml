@@ -67,30 +67,30 @@
     <mesh name="right_iai_connect_part" file="gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
     <mesh name="orbec_cam_mesh" file="camera/gemini335L.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_mesh" file="box/starrobot_box.stl" scale="0.001 0.001 0.001" />
-    <mesh name="table_surface" file="box/table_surface.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_back" file="box/box_back.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_foundation" file="box/box_foundation.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_left" file="box/box_left.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_right" file="box/box_right.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_top" file="box/box_top.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_back_low_plane" file="box/back_low_plane.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_back_top_plane" file="box/back_top_plane.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_ft_pole" file="box/ft_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lbt_pole" file="box/lbt_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_left_plane" file="box/left_plane.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_left_table_pad" file="box/left_table_pad.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lft_pole" file="box/lft_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_lowback_pole" file="box/lowback_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_ls_pole" file="box/ls_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_midback_pole" file="box/midback_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rbt_pole" file="box/rbt_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rft_pole" file="box/rft_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_right_plane" file="box/right_plane.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_right_table_pad" file="box/right_table_pad.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_roof" file="box/roof.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_rs_pole" file="box/rs_pole.stl" scale="0.001 0.001 0.001" />
-    <mesh name="box_top_mid_pole" file="box/top_mid_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_mesh" file="box/starrobox/starrobot_box.stl" scale="0.001 0.001 0.001" />
+    <mesh name="table_surface" file="box/starrobox/table_surface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back" file="box/starrobox/box_back.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_foundation" file="box/starrobox/box_foundation.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left" file="box/starrobox/box_left.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right" file="box/starrobox/box_right.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_top" file="box/starrobox/box_top.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back_low_plane" file="box/starrobox/back_low_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_back_top_plane" file="box/starrobox/back_top_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_ft_pole" file="box/starrobox/ft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lbt_pole" file="box/starrobox/lbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left_plane" file="box/starrobox/left_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_left_table_pad" file="box/starrobox/left_table_pad.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lft_pole" file="box/starrobox/lft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_lowback_pole" file="box/starrobox/lowback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_ls_pole" file="box/starrobox/ls_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_midback_pole" file="box/starrobox/midback_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rbt_pole" file="box/starrobox/rbt_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rft_pole" file="box/starrobox/rft_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right_plane" file="box/starrobox/right_plane.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_right_table_pad" file="box/starrobox/right_table_pad.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_roof" file="box/starrobox/roof.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_rs_pole" file="box/starrobox/rs_pole.stl" scale="0.001 0.001 0.001" />
+    <mesh name="box_top_mid_pole" file="box/starrobox/top_mid_pole.stl" scale="0.001 0.001 0.001" />
   </asset>
 
   <worldbody>

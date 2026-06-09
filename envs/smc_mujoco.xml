@@ -28,11 +28,11 @@
     <mesh name="smc_obj_ise35_n_25" file="objects/ISE35-N-25.stl" scale="0.001 0.001 0.001" />
     <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
     <mesh name="cam_holder_smc_mesh" file="camera/cam_holder_smc.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_back_cover" file="smc-box/back_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_front_cover" file="smc-box/front_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_left_cover" file="smc-box/left_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_right_cover" file="smc-box/right_cover.stl" scale="0.001 0.001 0.001" />
-    <mesh name="smc_box_stand_surface" file="smc-box/stand_surface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_back_cover" file="box/smc/back_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_front_cover" file="box/smc/front_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_left_cover" file="box/smc/left_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_right_cover" file="box/smc/right_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_stand_surface" file="box/smc/stand_surface.stl" scale="0.001 0.001 0.001" />
     <mesh name="suck_tool_mesh" file="tools/suck_tool.stl" scale="0.001 0.001 0.001" />
   </asset>
 
