@@ -45,7 +45,7 @@
     <mesh name="iai_right_pinch" file="gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
     <mesh name="iai_cable" file="gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
     <mesh name="iai_side" file="gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
-    <mesh name="iai_claw" file="gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
+    <mesh name="iai_claw" file="gripper/iai/left_gum_claw.stl" scale="0.001 0.001 0.001" />
     <mesh name="iai_gripper_cover" file="gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
     <mesh name="iai_connect_part" file="gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
     <mesh name="elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
@@ -62,7 +62,7 @@
     <mesh name="right_iai_right_pinch" file="gripper/iai/right_pinch.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_iai_cable" file="gripper/iai/cable.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_iai_side" file="gripper/iai/gripper_side.stl" scale="0.001 0.001 0.001" />
-    <mesh name="right_iai_claw" file="gripper/iai/claw.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_iai_claw" file="gripper/iai/right_gum_claw.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_iai_gripper_cover" file="gripper/iai/gripper_cover.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_iai_connect_part" file="gripper/iai/connect_part.stl" scale="0.001 0.001 0.001" />
     <mesh name="right_elp_cam_mesh" file="camera/elp_cam.stl" scale="0.001 0.001 0.001" />
@@ -138,12 +138,12 @@
                         <body name="right_pinch">
                           <joint name="right_pinch" pos="0.02 0 0" axis="-1 0 0" type="slide" limited="true" range="-0.015 0.015" actuatorfrclimited="false" actuatorgravcomp="true" armature="0.001" damping="0.2" />
                           <geom name="right_pinch" pos="0.0243746 0.00245222 0.00147149" quat="0 0 0 1" type="mesh" friction="0" density="1" material="gripper_mat" mesh="iai_right_pinch" />
-                          <geom name="right_claw" pos="0.00833277 0.0089508 -0.00681747" quat="0 1 0 0" type="mesh" mass="1e-09" material="gripper_mat" mesh="iai_claw" />
+                          <geom name="right_claw" pos="0.013 -0.003 0.002" quat="0 1 0 0" type="mesh" mass="1e-09" material="gripper_mat" mesh="iai_claw" />
                         </body>
                         <body name="left_pinch">
                           <joint name="left_pinch" pos="-0.02 0 0" axis="1 0 0" type="slide" limited="true" range="-0.015 0.015" actuatorfrclimited="false" actuatorgravcomp="true" armature="0.001" damping="0.2" />
                           <geom name="left_pinch" pos="-0.0232227 0.00214457 0.00154222" quat="0 0 0 1" type="mesh" friction="0" density="1" material="gripper_mat" mesh="iai_left_pinch" />
-                          <geom name="left_claw" pos="-0.00733679 0.00840771 0.009739" quat="0 0 0 1" type="mesh" mass="1e-09" material="gripper_mat" mesh="iai_claw" />
+                          <geom name="left_claw" pos="-0.011 -0.003 0.002" quat="0 0 0 1" type="mesh" mass="1e-09" material="gripper_mat" mesh="iai_claw" />
                         </body>
                       </body>
                       <body name="elp/base" pos="0 0 0.15" quat="0 0 0 1">
@@ -204,12 +204,12 @@
                         <body name="right/right_pinch_body">
                           <joint name="right/right_pinch" pos="0.02 0 0" axis="-1 0 0" type="slide" limited="true" range="-0.015 0.015" actuatorfrclimited="false" actuatorgravcomp="true" armature="0.001" damping="0.2" />
                           <geom name="right/right_pinch" pos="0.0243746 0.00245222 0.00147149" quat="0 0 0 1" type="mesh" friction="0" density="1" material="right_gripper_mat" mesh="right_iai_right_pinch" />
-                          <geom name="right/right_claw" pos="0.00833277 0.0089508 -0.00681747" quat="0 1 0 0" type="mesh" mass="1e-09" material="right_gripper_mat" mesh="right_iai_claw" />
+                          <geom name="right/right_claw" pos="-0.01 -0.003 -0.002" quat="0 1 0 0" type="mesh" mass="1e-09" material="right_gripper_mat" mesh="right_iai_claw" />
                         </body>
                         <body name="right/left_pinch_body">
                           <joint name="right/left_pinch" pos="-0.02 0 0" axis="1 0 0" type="slide" limited="true" range="-0.015 0.015" actuatorfrclimited="false" actuatorgravcomp="true" armature="0.001" damping="0.2" />
                           <geom name="right/left_pinch" pos="-0.0232227 0.00214457 0.00154222" quat="0 0 0 1" type="mesh" friction="0" density="1" material="right_gripper_mat" mesh="right_iai_left_pinch" />
-                          <geom name="right/left_claw" pos="-0.00733679 0.00840771 0.009739" quat="0 0 0 1" type="mesh" mass="1e-09" material="right_gripper_mat" mesh="right_iai_claw" />
+                          <geom name="right/left_claw" pos="0.01 -0.003 0.009739" quat="0 0 0 1" type="mesh" mass="1e-09" material="right_gripper_mat" mesh="right_iai_claw" />
                         </body>
                       </body>
                       <body name="right/elp/base" pos="0 0 0.15" quat="0 0 0 1">
@@ -238,8 +238,6 @@
     <body name="box/container">
       <geom name="box_table_surface" pos="0 -0.0156726 0.00475689" quat="1 0 0 0" type="mesh" material="box_surface_mat" mesh="table_surface" />
       <geom name="foundation" pos="0 0 0.0962222" quat="1 0 0 0" type="mesh" material="box_mat" mesh="box_foundation" />
-      <geom name="left" type="mesh" material="wood_mat" mesh="box_left_plane" />
-      <geom name="right" type="mesh" material="wood_mat" mesh="box_right_plane" />
       <geom name="back" type="mesh" material="wood_mat" mesh="box_back_low_plane" />
       <geom name="back_high" type="mesh" material="wood_mat" mesh="box_back_top_plane" />
       <geom name="top" pos="0.819164 0.990594 2.0702" quat="0.5 0.5 0.5 0.5" type="mesh" material="wood_mat" mesh="box_roof" />
@@ -257,17 +255,13 @@
 
   <contact>
     <pair geom1="left/geom_2_" geom2="foundation" name="pair10" />
-    <pair geom1="left/geom_2_" geom2="left" name="pair11" />
     <pair geom1="left/geom_2_" geom2="back" name="pair12" />
-    <pair geom1="left/geom_3_" geom2="left" name="pair13" />
     <pair geom1="left/geom_3_" geom2="back" name="pair14" />
     <pair geom1="left/geom_3_" geom2="foundation" name="pair15" />
     <pair geom1="right_side" geom2="right_pinch" name="gripper_pair_1" />
     <pair geom1="left_side" geom2="left_pinch" name="gripper_pair_2" />
     <pair geom1="right/geom_2_" geom2="foundation" name="pair8" />
-    <pair geom1="right/geom_3_" geom2="right" name="pair4" />
     <pair geom1="right/geom_3_" geom2="back" name="pair5" />
-    <pair geom1="right/geom_3_" geom2="right" name="pair6" />
     <pair geom1="right/geom_3_" geom2="back" name="pair7" />
     <pair geom1="right/geom_3_" geom2="foundation" name="pair9" />
     <pair geom1="right/right_side" geom2="right/right_pinch" name="right/gripper_pair_1" />
