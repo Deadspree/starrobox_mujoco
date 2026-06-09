@@ -33,6 +33,9 @@
     <mesh name="smc_box_left_cover" file="box/smc/left_cover.stl" scale="0.001 0.001 0.001" />
     <mesh name="smc_box_right_cover" file="box/smc/right_cover.stl" scale="0.001 0.001 0.001" />
     <mesh name="smc_box_stand_surface" file="box/smc/stand_surface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_side_low_cover" file="box/smc/side_low_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_low_cover" file="box/smc/low_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="smc_box_wheel" file="box/smc/wheel.stl" scale="0.001 0.001 0.001" />
     <mesh name="suck_tool_mesh" file="tools/suck_tool.stl" scale="0.001 0.001 0.001" />
   </asset>
 
@@ -89,6 +92,16 @@
       <geom name="right_cover" pos="0.801194 0.598945 0" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_right_cover" />
       <geom name="back_cover" pos="-0.000564487 0.600917 -0.376361" quat="0.707107 0 0 -0.707107" type="mesh" material="Material" mesh="smc_box_back_cover" />
       <geom name="fron_cover" pos="0.803775 -0.00432435 -0.378573" quat="0.707107 0 0 0.707107" type="mesh" material="Material" mesh="smc_box_front_cover" />
+      <geom name="left_low_cover" pos="0 0.6 -0.55" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_side_low_cover" />
+      <geom name="right_low_cover" pos="0.80 0.6 -0.55" quat="0.707107 0.707107 0 0" type="mesh" material="Material" mesh="smc_box_side_low_cover" />
+      <geom name="back_low_cover" pos="-0.000564487 0.600917 -0.376361" quat="0.707107 0 0 -0.707107" type="mesh" material="Material" mesh="smc_box_low_cover" />
+      <geom name="front_low_cover" pos="0.803775 -0.00432435 -0.376361" quat="0.707107 0 0 0.707107" type="mesh" material="Material" mesh="smc_box_low_cover" />
+      <!--
+      <geom name="wheel_front_left" pos="0 0.08 -0.4" quat="0.707107 0.707107 0 0" type="mesh" material="black" mesh="smc_box_wheel" />
+      <geom name="wheel_front_right" pos="0.68 0.08 -0.43" quat="0 0 0.707107 0.707107" type="mesh" material="black" mesh="smc_box_wheel" />
+      <geom name="wheel_back_left" pos="0.12 0.52 -0.43" quat="0 0 0.707107 0.707107" type="mesh" material="black" mesh="smc_box_wheel" />
+      <geom name="wheel_back_right" pos="0.68 0.52 -0.43" quat="0 0 0.707107 0.707107" type="mesh" material="black" mesh="smc_box_wheel" />
+      -->
     </body>
     <body name="objects" pos="0 0 0.181103">
       <body name="isa3-fcn">
